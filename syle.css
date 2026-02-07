@@ -1,98 +1,66 @@
-/* General Styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
+/* Guud ahaan bogga */
 body {
-  background: #ffffff; /* cad (white) */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
 }
 
-.task-container {
-  background: #fff; /* gudaha container cad */
-  width: 400px;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+/* Weelka ay hawsha ku jirto (Container) */
+.task-app {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-top: 8px solid #1B263B; /* Navy Blue border */
+    width: 100%;
+    max-width: 400px;
 }
 
+/* Ciwaanka "My Tasks" */
 h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #ff1a75; /* bright pink for title */
+    color: #1B263B;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
-.input-section {
-  display: flex;
-  gap: 10px;
-}
-
+/* Meesha qoraalka lagu qoro (Input) */
 input[type="text"] {
-  flex: 1;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #ff99cc; /* pink border */
-  outline: none;
-  font-size: 16px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
 }
 
+input[type="text"]:focus {
+    border-color: #FFB7C5; /* Pink marka aad gujiso */
+}
+
+/* Badhamada (Buttons) */
 button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 10px;
-  background: #ff1a75; /* pink button */
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s;
+    background-color: #1B263B; /* Navy Blue */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 button:hover {
-  background: #e60066; /* dark pink hover */
+    background-color: #E91E63; /* Pink marka aad mouse-ka saarto */
 }
 
-ul {
-  list-style: none;
-  margin-top: 20px;
-}
-
+/* Liiska hawlaha (Task List) */
 li {
-  background: #ffe6f0; /* light pink inside tasks */
-  padding: 12px 15px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.3s;
-}
-
-li.completed {
-  text-decoration: line-through;
-  opacity: 0.6;
-}
-
-.delete-btn {
-  background: #ff4da6;
-  border: none;
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background 0.3s;
-}
-
-.delete-btn:hover {
-  background: #e60066;
+    list-style: none;
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #FFB7C5; /* Pink bar */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
 }
