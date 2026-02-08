@@ -5,12 +5,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    body {
-    background-color: pink;
-}
 
-    background-color: #f0f2f5;
+body {
+    background-color: pink; /* Halkan ayaad midabka pink-ga ku qortay */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,4 +92,5 @@ li {
 .delete-btn:hover {
     background: #cc0000;
 }
+
 
